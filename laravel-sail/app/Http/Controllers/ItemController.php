@@ -21,4 +21,19 @@ class ItemController extends Controller
 
         return view('items.singleItem' , compact('item'));
     }
+
+    public function edit($id , Request $request){
+        $item = Item::where('id' , $id)-> firstOrFail(); 
+
+        return view('items.edit' , compact('item'));
+    }
+
+    public function save($id , Request $request){
+        $item = Item::where('id' , $id)-> firstOrFail();
+
+        $itemUpdate = $item->update($request->except('_token'));
+
+        return redirect()->route('item.view' , $item->slug);
+    }
+
 }

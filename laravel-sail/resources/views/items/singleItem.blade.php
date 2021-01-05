@@ -8,3 +8,4 @@
 
 <p>id de l'item : {{$item ->id}}</p>
 
+<a href="{{URL::route('edit.view' , $item->id)}}">éditer l'item</a>

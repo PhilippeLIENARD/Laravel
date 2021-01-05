@@ -23,7 +23,19 @@ Route::get(
 )->name('home.view');
 
 Route::get(
-    '/item{slug}',
+    '/item-{slug}',
     [ItemController::class ,
     'item']
 )->name('item.view');
+
+Route::get(
+    '/edit-id{id}',
+    [ItemController::class ,
+    'edit']
+)->name('edit.view');
+
+Route::post(   
+    '/edit-id{id}',
+    [ItemController::class ,
+    'save']
+)->name('save.post');
