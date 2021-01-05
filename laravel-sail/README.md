@@ -1,10 +1,10 @@
 1: curl https://laravel.build/exemple-app
 
-2. Get https://github.com/PhilippeLIENARD/Laravel/edit/main/laravel-sail/ code
+2: Get https://github.com/PhilippeLIENARD/Laravel/edit/main/laravel-sail/ code
 
-3. Merge with your fresh Laravel install
+3: Merge with your fresh Laravel install
 
-4 ./vendor/bin/sail up to docker-compose up my Laravel test project
+4: ./vendor/bin/sail up to docker-compose up my Laravel test project
 
 
 <hr>
