@@ -22,7 +22,7 @@ class ItemController extends Controller
         return view('items.singleItem' , compact('item'));
     }
 
-    public function edit($id , Request $request){
+    public function edit($id){
         $item = Item::where('id' , $id)-> firstOrFail(); 
 
         return view('items.edit' , compact('item'));
