@@ -4,6 +4,8 @@
 
 - Merge with your fresh Laravel install
 
+- sail php artisan migrate
+
 - ./vendor/bin/sail up to docker-compose up my Laravel test project
 
 Laravel Sail : https://laravel.com/docs/8.x/sail 
