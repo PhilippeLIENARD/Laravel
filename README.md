@@ -18,14 +18,10 @@ Prérequis : Docker et Linux installés<br><br>
 
 - ./vendor/bin/sail up to docker-compose up my Laravel test project
 
-
 <hr>
 
+<h2>Ce que j'ai réalisé</h2>
 
-
-<h2>Ce qui a été fait :</h2>
-
-- Composer : installation de Laravel<br>
 - PHP artisan : migration pour créer la DB + configuration du Model et des fonctions de migration<br>
 - Routes : appel du Controller et de ses méthodes en get() pour afficher le contenu et les vues, et en post() pour les modifications demandées depuis les vues<br>
 - Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
@@ -33,11 +29,10 @@ Prérequis : Docker et Linux installés<br><br>
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
-<h2>Liste des fichiers concernés par cette première approche :</h2>
+<h2>Liste des fichiers créés</h2>
 
 
-Laravel Sail : https://laravel.com/docs/8.x/sail 
-
+Je me suis principalement basé sur la documentation officielle Laravel Sail : https://laravel.com/docs/8.x/sail, et sur la documentation de l'API
 <hr>
 
 
