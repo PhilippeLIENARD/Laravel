@@ -13,15 +13,15 @@ Prérequis : Docker et Linux installés<br><br>
 
 <h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
 
-- <code>curl https://laravel.build/exemple-app<code>
+- <code># curl https://laravel.build/exemple-app</code>
 
 - Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
 
 - Remplacer les fichiers de votre installation avec mes fichiers
 
-- sail php artisan migrate (avec éventuellement l'option --path si nécessaire)
+- <code># sail php artisan migrate</code> (avec éventuellement l'option --path si nécessaire)
 
-- ./vendor/bin/sail up to docker-compose up
+- <code># ./vendor/bin/sail up to docker-compose up</code> 
 
 <hr>
 
