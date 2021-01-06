@@ -1,7 +1,7 @@
-<h1>Découverte de Laravel et de Sail : j'ai fait un petit site "laravel-sail"</h1>
+<h1>Découverte de Laravel et de Sail</h1>
 
 <br>
-Exercice : réalisation d'un site permettant d'afficher une liste de BD, en liste complète ou en pagination. Possibilité d'éditer, supprimer ou ajouter des BD.
+Pour découvrir Laravel et Sail j'ai réalisé un petit site permettant d'afficher une liste de BD, en liste complète ou en pagination. Possibilité d'éditer, supprimer ou ajouter des BD.
 <br><br>
 Prérequis : Docker et Linux installés<br><br>
 
