@@ -15,7 +15,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - <code># curl https://laravel.build/example-app | bash</code>
 
-- Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
+- Télécharger le code https://github.com/PhilippeLIENARD/Laravel.git
 
 - Remplacer les fichiers de votre installation avec mes fichiers
 
