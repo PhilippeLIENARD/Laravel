@@ -27,7 +27,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 <hr>
 
-<h2>Ce qui a été fait pour le site</h2>
+<h2>Ce qui a été fait pour réaliser le site de test</h2>
 
 - PHP artisan : migration pour créer la DB + template du Model <br>
 - Migration : fonctions de migration<br>
