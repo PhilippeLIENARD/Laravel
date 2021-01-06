@@ -21,7 +21,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - <code># ./vendor/bin/sail up</code> pour lancer les containers
 
-- <code># sail php artisan migrate</code> (avec éventuellement l'option --path si nécessaire)
+- <code># sail php artisan migrate</code> (avec l'option --path si nécessaire)
 
 
 
