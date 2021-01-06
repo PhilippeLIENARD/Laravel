@@ -19,7 +19,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - Remplacer les fichiers de votre installation avec mes fichiers
 
-- <code># ./vendor/bin/sail up</code> pour lancer les containers
+- <code># ./vendor/bin/sail up</code> pour lancer appeler le fichier https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/docker-compose.yml et lancer les containers
 
 - <code># sail php artisan migrate</code> (avec l'option --path si nécessaire)
 
@@ -37,7 +37,19 @@ Prérequis : Docker et Linux installés<br><br>
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
-<h2>Liste des fichiers créés</h2>
+<h3>Liste des fichiers créés</h3>
+
+
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/app/Models/Item.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/database/migrations/2021_01_05_133735_items_table.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/routes/web.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/app/Http/Controllers/ItemController.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/app/Http/Controllers/StrTools.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/resources/views/items/home.blade.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/resources/views/items/singleItem.blade.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/resources/views/layouts/global.blade.php
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/resources/views/items/addnew.blade.php 
+- https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/resources/views/items/edit.blade.php
 
 
 Je me suis principalement basé sur la documentation officielle Laravel Sail : https://laravel.com/docs/8.x/sail, et sur la documentation de l'API
