@@ -5,7 +5,7 @@ Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclus :
 
 - containeriser l'environnement pour développer une application Laravel (via Sail)
 
-- la réalisation d'un petit site qui permet d'afficher une liste de BD, en liste complète ou en pagination, avec la possibilité d'éditer, supprimer ou ajouter des BD.
+- la réalisation d'un petit site qui permet d'afficher une liste de BD, en liste complète ou en pagination, avec la possibilité d'éditer, supprimer ou ajouter de nouvelles BD.
 <br><br>
 Prérequis : Docker et Linux installés<br><br>
 
