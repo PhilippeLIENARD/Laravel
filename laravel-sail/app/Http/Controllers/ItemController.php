@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Item;
 
+use App\Http\Middleware\StrTools;
+
 class ItemController extends Controller
 {
     

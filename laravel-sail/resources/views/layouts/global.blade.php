@@ -37,7 +37,10 @@ nav.flex.items-center.justify-between {
     color: #fff;
     text-align:center;    
     padding: 30px;
-    margin-top: 42px;
+    margin-top: 42px;    
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 .footer a, .footer a:hover{
     color: #fff;
@@ -90,7 +93,7 @@ nav.flex.items-center.justify-between {
       <div>
       Découverte de Laravel et de Sail (Containeriser Laravel) : site de test réalisé par Philippe Liénard <br />
 
-      <a href="https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/README.md#d%C3%A9couverte-de-laravel-et-de-sail-containeriser-laravel">https://github.com/PhilippeLIENARD/Laravel</a>
+      <strong><a href="https://github.com/PhilippeLIENARD/Laravel">https://github.com/PhilippeLIENARD/Laravel</a></strong>
         <span class="text-muted"></span>
       </div>
     </footer>
