@@ -19,7 +19,7 @@ class ItemController extends Controller
                 $content = Item::orderBy('id' , 'desc')->paginate(5);
                 break;
             case 0:
-                $content = Item::get();
+                $content = Item::orderBy('id' , 'desc')->get();
                 break;
             
         endswitch;
@@ -51,14 +51,14 @@ class ItemController extends Controller
 
         $item->update($itemToUpdate);
         
-        return redirect()->route('item.view' , $item->slug);
+        return redirect()->route('item.route' , $item->slug);
     }
 
     public function delete($id)
     {
         Item::where('id' , $id)->delete();
 
-        return redirect()->route('home.view');
+        return redirect()->route('home.route');
     }
 
     public function addNewGet()
@@ -74,7 +74,7 @@ class ItemController extends Controller
         
         Item::insertGetID($newItem);
 
-        return redirect()->route('home.view');
+        return redirect()->route('home.route');
     }
 
 }

@@ -3,7 +3,7 @@
 @section('content')
 <h1> Edition de l'article id {{$item->id}} </h1>
 
-<form action="{{URL::route('save.post' , $item->id)}}" method="POST">
+<form action="{{URL::route('save.route' , $item->id)}}" method="POST">
     
     @csrf
 
@@ -22,10 +22,9 @@
         <input type="txt" name="content" value="{{$item->content}}"><br />
     <div>
 
-
-
-
-    <button type="submit">Enregister</button><br />
+    <br/>
+    <button type="submit"  class="btn btn-primary">Enregister</button><br />
+    
 </form>
 
 @stop

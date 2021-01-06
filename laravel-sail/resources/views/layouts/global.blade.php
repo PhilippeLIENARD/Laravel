@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,69 +7,93 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Mangas & BD</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
 
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-  </head>
-  <style>
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+	<!-- CSS only -->
+<style>
 svg.w-5.h-5 {
-    width: 31px;
+   
+    width: 40px;
+    margin-bottom: -13px;
 }
-.starter-template{
-    margin-top:80px;
+p.text-sm.text-gray-700.leading-5 {
+    margin-top: 17px;
 }
-</style>
+
+nav.flex.items-center.justify-between {
+    margin-top: 50px;
+}
+
+.container{margin-top:100px}
+.footer {
+    background: #607D8B;
+    color: #fff;
+    text-align:center;    
+    padding: 30px;
+    margin-top: 42px;
+}
+.footer a, .footer a:hover{
+    color: #fff;
+} 
+</style>  
+  
+  </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+			
+			
+            <li class="nav-item">
+              <a class="nav-link" href="{{URL::route('addnew.route')}}">Ajouter une BD</a>
+            </li>
+           
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+         
+          </form>
+        </div>
+      </nav>
+    </header>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-
+    <!-- Begin page content -->
+	
+	 <!-- Begin page content -->
     <main role="main" class="container">
+      
+         @yield('content')
+     
+    </main>
 
-      <div class="starter-template">
-        
-        @yield('content')
 
+  
+
+    <footer class="footer">
+      <div>
+      Découverte de Laravel et de Sail (Containeriser Laravel) : site de test réalisé par Philippe Liénard <br />
+
+      <a href="https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/README.md#d%C3%A9couverte-de-laravel-et-de-sail-containeriser-laravel">https://github.com/PhilippeLIENARD/Laravel</a>
+        <span class="text-muted"></span>
       </div>
-
-    </main><!-- /.container -->
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

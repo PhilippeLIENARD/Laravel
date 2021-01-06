@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a href="{{URL::route('home.view')}}">Retour</a>
+<a href="{{URL::route('home.route')}}">Retour</a>
 
 <h1>{{$item -> title}}</h1>
 
@@ -12,11 +12,13 @@
 
 <p>url de l'item : {{$item ->slug}}</p>
 
-<a href="{{URL::route('edit.view' , $item->id)}}">éditer l'item</a>
+<a href="{{URL::route('edit.route' , $item->id)}}"><strong>Editer</strong></a>
 
-<form action="{{URL::route('delete.item' , $item ->id)}}" method ="POST">
+<br /><br />
+
+<form action="{{URL::route('delete.route' , $item ->id)}}" method ="POST">
     @csrf
-    <button type="submit">supprimer</button>
+    <button type="submit" class="btn btn-primary">Supprimer</button>
 </form>
 
 @stop

@@ -20,38 +20,38 @@ Route::get(
     '/',   
     [ItemController::class , 
     'home'] 
-)->name('home.view');
+)->name('home.route');
 
 Route::post( 
     '/',   
     [ItemController::class , 
     'home'] 
-)->name('paginate.post');
+)->name('paginate.route');
 
 Route::get(
-    '/item-{slug}',
+    '/bd-mangas-{slug}',
     [ItemController::class ,
     'item']
-)->name('item.view');
+)->name('item.route');
 
 Route::get(
     '/edit-id{id}',
     [ItemController::class ,
     'edit']
-)->name('edit.view');
+)->name('edit.route');
 
 Route::post(   
     '/edit-id{id}',
     [ItemController::class ,
     'save']
-)->name('save.post');
+)->name('save.route');
 
 
 Route::post(
     '/delete{id}',
     [ItemController::class ,
     'delete']
-)->name('delete.item');
+)->name('delete.route');
 
 Route::get(
     '/addnew',

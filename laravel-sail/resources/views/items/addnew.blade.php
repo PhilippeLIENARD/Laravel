@@ -1,4 +1,6 @@
-<h1> Ajouter un article </h1>
+@extends('layouts.global')
+@section('content')
+<h1> Ajouter une BD </h1>
 
 <form action="{{URL::route('postnew.route')}}" method="POST">
     
@@ -20,7 +22,8 @@
     <div>
 
 
+    <br />
 
-
-    <button type="submit">Ajouter</button><br />
+    <button type="submit" class="btn btn-primary">Ajouter</button><br />
 </form>
+@stop

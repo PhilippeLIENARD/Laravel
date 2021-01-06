@@ -3,18 +3,18 @@
 
 @if ($content instanceof \Illuminate\Pagination\LengthAwarePaginator == false)
 
-<form action="{{URL::route('paginate.post')}}" method="POST">
+<form action="{{URL::route('paginate.route')}}" method="POST">
     @csrf
     <input type="hidden" name="paginate" value="1">
-    <button type="submit">Pagination !</button>
+    <button type="submit" class="btn btn-primary">Pagination !</button>
 </form>
 
 @elseif ($content instanceof \Illuminate\Pagination\LengthAwarePaginator)
 
-<form action="{{URL::route('paginate.post')}}" method="POST">
+<form action="{{URL::route('paginate.route')}}" method="POST">
     @csrf
     <input type="hidden" name="paginate" value="0">
-    <button type="submit">Afficher toute la liste</button>
+    <button type="submit" class="btn btn-primary">Afficher toute la liste</button>
 </form>
 
 @endif
@@ -25,7 +25,8 @@
 
     <h1>{{$item -> title}}</h1>
     <p>{{$item -> content}}</p>
-    <a href="{{URL::route('item.view' , $item->slug)}}">Lien vers l'item</a>
+    <a href="{{URL::route('item.route' , $item->slug)}}">Lien vers la BD</a>
+    <hr />
 
 @endforeach
 
