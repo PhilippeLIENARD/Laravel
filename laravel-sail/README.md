@@ -16,7 +16,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - sail php artisan migrate
 
-- ./vendor/bin/sail up to docker-compose up my Laravel test project
+- ./vendor/bin/sail up to docker-compose up
 
 <hr>
 
