@@ -19,7 +19,9 @@ Prérequis : Docker et Linux installés<br><br>
 
 - Remplacer les fichiers de votre installation avec mes fichiers
 
-- <code># ./vendor/bin/sail up</code> pour lancer appeler le fichier docker-compose.yml et lancer les containers
+- <code># alias sail='bash vendor/bin/sail'</code>
+
+- <code># sail up -d</code> pour appeler le fichier docker-compose.yml et lancer les containers en mode détaché
 
 - <code># sail php artisan migrate</code> (avec l'option --path si nécessaire)
 
