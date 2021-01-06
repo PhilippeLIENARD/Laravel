@@ -10,9 +10,9 @@ Prérequis : Docker et Linux installés<br><br>
 
 - curl https://laravel.build/exemple-app
 
-- Get https://github.com/PhilippeLIENARD/Laravel/edit/main/laravel-sail/ code
+- Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
 
-- Merge with your fresh Laravel install
+- Remplacer les fichier de votre installation avec mes fichiers
 
 - sail php artisan migrate
 
