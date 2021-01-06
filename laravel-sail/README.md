@@ -13,7 +13,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 <h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
 
-- curl https://laravel.build/exemple-app
+- <code>curl https://laravel.build/exemple-app<code>
 
 - Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
 
