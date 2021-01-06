@@ -1,3 +1,13 @@
+<h1>Découverte de Laravel et de Sail : j'ai fait un petit site "laravel-sail"</h1>
+
+<br>
+Exercice : réalisation d'un site permettant d'afficher une liste de BD, en liste complète ou en pagination. Possibilité d'éditer, supprimer ou ajouter des BD.
+<br><br>
+Prérequis : Docker et Linux installés<br><br>
+
+
+<h2>Pour installer le site DEMO "laravel-sail"</h2>
+
 - curl https://laravel.build/exemple-app
 
 - Get https://github.com/PhilippeLIENARD/Laravel/edit/main/laravel-sail/ code
@@ -7,6 +17,24 @@
 - sail php artisan migrate
 
 - ./vendor/bin/sail up to docker-compose up my Laravel test project
+
+
+<hr>
+
+
+
+<h2>Ce qui a été fait :</h2>
+
+- Composer : installation de Laravel<br>
+- PHP artisan : migration pour créer la DB + configuration du Model et des fonctions de migration<br>
+- Routes : appel du Controller et de ses méthodes en get() pour afficher le contenu et les vues, et en post() pour les modifications demandées depuis les vues<br>
+- Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
+- Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaines de caractères et le rendre accessible dans le controller du Contenu
+- Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
+
+
+<h2>Liste des fichiers concernés par cette première approche :</h2>
+
 
 Laravel Sail : https://laravel.com/docs/8.x/sail 
 
