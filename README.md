@@ -9,7 +9,7 @@ Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclut :
 <br><br>
 
 
-<h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
+<h2>Pour Containeriser mon site de test "laravel-sail" sur votre ordinateur</h2>
 
 Prérequis : Docker et Linux installés<br><br>
 
@@ -37,7 +37,7 @@ Prérequis : Docker et Linux installés<br><br>
 - Migration : méthodes de migration pour créer la table, les colonnes et du contenu test<br>
 - Routes : appel du Controller en GET ou en POST<br>
 - Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
-- Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaînes de caractères et le rendre accessible dans le controller du Contenu
+- Facades : utilisation du principe de Facades pour créer un petit outil de nettoyage des chaînes de caractères et le rendre accessible dans le controller du Contenu
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
