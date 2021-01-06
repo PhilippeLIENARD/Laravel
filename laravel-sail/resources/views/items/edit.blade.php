@@ -1,3 +1,6 @@
+@extends('layouts.global')
+
+@section('content')
 <h1> Edition de l'article id {{$item->id}} </h1>
 
 <form action="{{URL::route('save.post' , $item->id)}}" method="POST">
@@ -24,3 +27,5 @@
 
     <button type="submit">Enregister</button><br />
 </form>
+
+@stop

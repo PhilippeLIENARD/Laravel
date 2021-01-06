@@ -1,4 +1,5 @@
 @extends('layouts.global')
+@section('content')
 
 @if ($content instanceof \Illuminate\Pagination\LengthAwarePaginator == false)
 
@@ -34,5 +35,7 @@
 {{$content->links()}} 
 
 @endif
+
+@stop
 
 

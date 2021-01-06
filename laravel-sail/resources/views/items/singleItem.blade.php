@@ -1,4 +1,6 @@
+@extends('layouts.global')
 
+@section('content')
 
 <a href="{{URL::route('home.view')}}">Retour</a>
 
@@ -16,3 +18,5 @@
     @csrf
     <button type="submit">supprimer</button>
 </form>
+
+@stop
