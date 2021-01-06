@@ -1,15 +1,46 @@
-- curl https://laravel.build/exemple-app
+<h1>Découverte de Laravel et de Sail (Containeriser Laravel)</h1>
 
-- Get https://github.com/PhilippeLIENARD/Laravel/edit/main/laravel-sail/ code
+<br>
+Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclut : 
 
-- Merge with your fresh Laravel install
+- Containeriser l'environnement pour développer une application Laravel (via Sail)
 
-- sail php artisan migrate
+- Réaliser une petite application web qui permet d'afficher une liste de BD, en liste complète ou en pagination, avec la possibilité d'éditer, supprimer ou d'en ajouter de nouvelles.
+<br><br>
 
-- ./vendor/bin/sail up to docker-compose up my Laravel test project
 
-Laravel Sail : https://laravel.com/docs/8.x/sail 
+<h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
 
+Prérequis : Docker et Linux installés<br><br>
+
+- <code># curl https://laravel.build/example-app | bash</code>
+
+- Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
+
+- Remplacer les fichiers de votre installation avec mes fichiers
+
+- <code># ./vendor/bin/sail up</code> pour lancer les containers
+
+- <code># sail php artisan migrate</code> (avec éventuellement l'option --path si nécessaire)
+
+
+
+<hr>
+
+<h2>Ce qui a été fait pour le site</h2>
+
+- PHP artisan : migration pour créer la DB + template du Model <br>
+- Migration : fonctions de migration<br>
+- Routes : appel du Controller en GET ou en POST pour afficher ou modifier le contenu<br>
+- Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
+- Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaînes de caractères et le rendre accessible dans le controller du Contenu
+- Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
+
+
+<h2>Liste des fichiers créés</h2>
+
+
+Je me suis principalement basé sur la documentation officielle Laravel Sail : https://laravel.com/docs/8.x/sail, et sur la documentation de l'API
 <hr>
 
 
