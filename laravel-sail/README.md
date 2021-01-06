@@ -1,7 +1,7 @@
 <h1>Découverte de Laravel et de Sail (Containeriser Laravel)</h1>
 
 <br>
-Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclus : 
+Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclut : 
 
 - Containeriser l'environnement pour développer une application Laravel (via Sail)
 
@@ -33,7 +33,7 @@ Prérequis : Docker et Linux installés<br><br>
 - Migration : fonctions de migration<br>
 - Routes : appel du Controller en GET ou en POST pour afficher ou modifier le contenu<br>
 - Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
-- Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaines de caractères et le rendre accessible dans le controller du Contenu
+- Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaînes de caractères et le rendre accessible dans le controller du Contenu
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
