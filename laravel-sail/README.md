@@ -1,7 +1,11 @@
-<h1>Découverte de Laravel et de Sail</h1>
+<h1>Découverte de Laravel et de Sail (Containeriser Laravel)</h1>
 
 <br>
-Pour découvrir Laravel et Sail j'ai réalisé un petit site permettant d'afficher une liste de BD, en liste complète ou en pagination. Possibilité d'éditer, supprimer ou ajouter des BD.
+Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclus : 
+
+- containeriser l'environnement pour développer une application Laravel (via Sail)
+
+- la réalisation d'un petit site qui permet d'afficher une liste de BD, en liste complète ou en pagination, avec la possibilité d'éditer, supprimer ou ajouter des BD.
 <br><br>
 Prérequis : Docker et Linux installés<br><br>
 
