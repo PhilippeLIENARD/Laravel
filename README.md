@@ -17,7 +17,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - Télécharger le code https://github.com/PhilippeLIENARD/Laravel.git
 
-- Remplacer les fichiers de votre installation avec mes fichiers
+- Remplacer les fichiers root de votre installation avec mes fichiers root
 
 - <code># alias sail='bash vendor/bin/sail'</code>
 
