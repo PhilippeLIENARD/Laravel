@@ -30,7 +30,7 @@ Prérequis : Docker et Linux installés<br><br>
 <h2>Ce qui a été fait pour réaliser l'application de test</h2>
 
 - PHP artisan : migration pour créer la DB + template du Model <br>
-- Migration : fonctions de migration<br>
+- Migration : méthodes de migration pour créer la table, les colonnes et du contenu test<br>
 - Routes : appel du Controller en GET ou en POST pour afficher ou modifier le contenu<br>
 - Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
 - Facades : utilisation du principe de facades pour créer un petit outil de nettoyage des chaînes de caractères et le rendre accessible dans le controller du Contenu
