@@ -9,7 +9,7 @@ Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclut :
 <br><br>
 
 
-<h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
+<h2>Pour Containeriser mon site de test "laravel-sail" sur votre ordinateur</h2>
 
 Prérequis : Docker et Linux installés<br><br>
 
