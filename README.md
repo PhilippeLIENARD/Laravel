@@ -25,7 +25,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - <code># sail php artisan migrate</code> (avec l'option --path si nécessaire)
 
-- Ouvrez votre navigateur, aller sur http://localhost/ et commencez à remplir votre liste de BD
+- Allez sur http://localhost/ et commencez à remplir votre liste de BD via l'application web
 
 
 <hr>
