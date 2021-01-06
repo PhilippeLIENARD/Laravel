@@ -6,7 +6,7 @@ Exercice : réalisation d'un site permettant d'afficher une liste de BD, en list
 Prérequis : Docker et Linux installés<br><br>
 
 
-<h2>Pour installer le site DEMO "laravel-sail"</h2>
+<h2>Pour installer mon site de test "laravel-sail"</h2>
 
 - curl https://laravel.build/exemple-app
 
