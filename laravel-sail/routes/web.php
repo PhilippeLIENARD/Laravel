@@ -22,6 +22,12 @@ Route::get(
     'home'] 
 )->name('home.view');
 
+Route::post( 
+    '/',   
+    [ItemController::class , 
+    'home'] 
+)->name('paginate.post');
+
 Route::get(
     '/item-{slug}',
     [ItemController::class ,
@@ -39,3 +45,22 @@ Route::post(
     [ItemController::class ,
     'save']
 )->name('save.post');
+
+
+Route::post(
+    '/delete{id}',
+    [ItemController::class ,
+    'delete']
+)->name('delete.item');
+
+Route::get(
+    '/addnew',
+    [ItemController::class,
+    'addNewGet']
+)->name('addnew.route');
+
+Route::post(
+    '/addnew',
+    [ItemController::class,
+    'addNewPost']
+)->name('postnew.route');

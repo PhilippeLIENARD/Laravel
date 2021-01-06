@@ -9,31 +9,72 @@ use App\Models\Item;
 class ItemController extends Controller
 {
     
-    public function home(){
+    public function home(Request $request)
+    {
+        $paginate = $request->input('paginate' , 1);
 
-        $content = Item::get();
+        switch($paginate):
+
+            case 1:
+                $content = Item::orderBy('id' , 'desc')->paginate(5);
+                break;
+            case 0:
+                $content = Item::get();
+                break;
+            
+        endswitch;
         
         return view('items.home' , compact('content'));
     }
 
-    public function item($slug){
+    public function item($slug)
+    {
         $item = Item::where('slug' , $slug)-> firstOrFail();
 
         return view('items.singleItem' , compact('item'));
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $item = Item::where('id' , $id)-> firstOrFail(); 
 
         return view('items.edit' , compact('item'));
     }
 
-    public function save($id , Request $request){
+    public function save($id , Request $request)
+    {
         $item = Item::where('id' , $id)-> firstOrFail();
 
-        $itemUpdate = $item->update($request->except('_token'));
+        $itemToUpdate = $request->except('_token');
 
+        $itemToUpdate['slug'] = StrTools::cleanUrl($itemToUpdate['slug']);
+
+        $item->update($itemToUpdate);
+        
         return redirect()->route('item.view' , $item->slug);
+    }
+
+    public function delete($id)
+    {
+        Item::where('id' , $id)->delete();
+
+        return redirect()->route('home.view');
+    }
+
+    public function addNewGet()
+    {
+        return view('items.addnew');
+    }
+
+    public function addNewPost(Request $request)
+    {
+        $newItem = $request->except('_token');
+
+        $newItem['slug'] = StrTools::cleanUrl($newItem['slug']);
+        
+        Item::insertGetID($newItem);
+
+        return redirect()->route('home.view');
     }
 
 }
