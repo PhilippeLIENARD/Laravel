@@ -18,9 +18,9 @@
 </form>
 
 @endif
-
-<a href="{{URL::route('addnew.route')}}">Ajouter un item</a>
-
+<br />
+<a href="{{URL::route('addnew.route')}}" style="border: 1px solid #cbcbcb;padding: 10px;"> Ajouter une BD</a>
+<br /><br />
 @foreach ($content as $item)
 
     <h1>{{$item -> title}}</h1>
