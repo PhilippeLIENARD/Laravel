@@ -29,6 +29,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 <h2>Ce qui a été fait pour réaliser l'application de test</h2>
 
+- Model : définition des propriétés d'affectation 
 - PHP artisan : migration pour créer la DB + template du Model <br>
 - Migration : méthodes de migration pour créer la table, les colonnes et du contenu test<br>
 - Routes : appel du Controller en GET ou en POST<br>
