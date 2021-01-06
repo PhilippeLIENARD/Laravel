@@ -31,7 +31,11 @@ nav.flex.items-center.justify-between {
     margin-top: 50px;
 }
 
-.container{margin-top:100px}
+.container{
+  margin-top:100px;
+  margin-bottom: 280px;
+}
+
 .footer {
     background: #607D8B;
     color: #fff;

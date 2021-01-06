@@ -18,7 +18,7 @@ class ItemController extends Controller
         switch($paginate):
 
             case 1:
-                $content = Item::orderBy('id' , 'desc')->paginate(5);
+                $content = Item::orderBy('id' , 'desc')->paginate(3);
                 break;
             case 0:
                 $content = Item::orderBy('id' , 'desc')->get();
