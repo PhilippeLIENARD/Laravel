@@ -19,7 +19,7 @@ Prérequis : Docker et Linux installés<br><br>
 
 - Remplacer les fichiers de votre installation avec mes fichiers
 
-- <code># ./vendor/bin/sail up</code> pour lancer appeler le fichier https://github.com/PhilippeLIENARD/Laravel/blob/main/laravel-sail/docker-compose.yml et lancer les containers
+- <code># ./vendor/bin/sail up</code> pour lancer appeler le fichier docker-compose.yml et lancer les containers
 
 - <code># sail php artisan migrate</code> (avec l'option --path si nécessaire)
 
