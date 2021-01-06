@@ -8,10 +8,10 @@ Pour découvrir Laravel et Sail j'ai réalisé un petit projet qui inclus :
 - Réaliser une petite application web qui permet d'afficher une liste de BD, en liste complète ou en pagination, avec la possibilité d'éditer, supprimer ou d'en ajouter de nouvelles.
 <br><br>
 
-Prérequis : Docker et Linux installés<br><br>
-
 
 <h2>Pour installer mon site de test "laravel-sail" dans un container</h2>
+
+Prérequis : Docker et Linux installés<br><br>
 
 - <code># curl https://laravel.build/example-app | bash</code>
 
