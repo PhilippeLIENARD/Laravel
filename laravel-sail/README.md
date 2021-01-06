@@ -17,9 +17,9 @@ Prérequis : Docker et Linux installés<br><br>
 
 - Télécharger le code https://github.com/PhilippeLIENARD/Laravel/tree/main/laravel-sail
 
-- Remplacer les fichier de votre installation avec mes fichiers
+- Remplacer les fichiers de votre installation avec mes fichiers
 
-- sail php artisan migrate
+- sail php artisan migrate (avec éventuellement l'option --path si nécessaire)
 
 - ./vendor/bin/sail up to docker-compose up
 
