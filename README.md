@@ -36,8 +36,8 @@ Prérequis : Docker et Linux installés<br><br>
 - PHP artisan : migration pour créer la DB + template du Model <br>
 - Migration : méthodes de migration pour créer la table, les colonnes et du contenu test<br>
 - Routes : appel du Controller en GET ou en POST<br>
-- Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues<br>
-- Facades - Middleware : utilisation du principe de Facades pour créer un petit outil de nettoyage des chaînes de caractères
+- Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues>
+- Middleware : création d'un petit outil de nettoyage des chaînes de caractères pour les URL<br>
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
