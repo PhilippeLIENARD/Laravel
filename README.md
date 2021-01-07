@@ -37,7 +37,7 @@ Prérequis : Docker et Linux installés<br><br>
 - Migration : méthodes de migration pour créer la table, les colonnes et du contenu test<br>
 - Routes : appel du Controller en GET ou en POST<br>
 - Controller : création des méthodes pour afficher ou modifier le contenu, et appeler les vues>
-- Middleware : création d'un petit outil de nettoyage des chaînes de caractères pour les URL<br>
+- Middleware : création d'un filtre de nettoyage pour les chaînes de caractères des URL<br>
 - Views : création d'un layout en Blade et des différentes vues, sur base d'un exemple Bootstrap <br>
 
 
